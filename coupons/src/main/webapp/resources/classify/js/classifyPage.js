@@ -7,7 +7,7 @@ $(document).ready(function() {
 //获取收文详情
 function getData(){
 	 $.ajax({
-       url: "/coupons/homeRest/getCouponsList.do",
+       url: "/coupons/classifyRest/getClassify.do",
        type: 'get',
        dataType: 'JSON',
        success: function(result) {
@@ -15,11 +15,8 @@ function getData(){
     		   alert("请求超时");
     		   return;
     	   }
-      		var data = result.data[0];
-      		$("#goods_name").html(data.goods_name);
-           	$("#cate_name").html(data.cate_name);
-      		$("#price").html(data.price);
-           	$("#price_after_coupons").html(data.price_after_coupons);
+    	   var data = result.data;
+    		  $("#classname").html(data[0].classname);
        }
    });
 }

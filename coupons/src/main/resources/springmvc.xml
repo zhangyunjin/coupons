@@ -18,7 +18,7 @@
 	<!-- 配置全局日期转换器 -->
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="webBindingInitializer">
-			<bean class="cn.edu.core.web.CustomDateEdtor"/>
+			<bean class="cn.edu.core.commons.utils.CustomDateEdtor"/>
 		</property>
 	</bean>
 	

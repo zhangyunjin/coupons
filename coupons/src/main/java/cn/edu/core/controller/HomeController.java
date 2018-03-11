@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/home")
 public class HomeController {
 	/**
-	 * 优惠券列表
+	 * 首页优惠券列表
 	 */
-	@RequestMapping("/conponsList")
+	@RequestMapping("/toCouponsList.do")
 	public String conponsList(HttpServletResponse response){
 		return "home/homePage";
 	}

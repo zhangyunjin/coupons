@@ -1,4 +1,4 @@
-package cn.edu.core.web;
+package cn.edu.core.commons.utils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

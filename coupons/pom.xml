@@ -26,7 +26,8 @@
   <properties>
 		<java-version>1.7</java-version>
 		<junit-version>4.8.2</junit-version>
-		<org.springframework-version>3.2.4.RELEASE</org.springframework-version>
+<!-- 		<org.springframework-version>3.2.4.RELEASE</org.springframework-version> -->
+		<org.springframework-version>4.3.9.RELEASE</org.springframework-version>
 		<jackson-mapper-asl-version>1.9.12</jackson-mapper-asl-version>
 		<jackson-core-asl-version>1.9.12</jackson-core-asl-version>
 		<mysql-connector-java-version>5.1.8</mysql-connector-java-version>
@@ -230,6 +231,16 @@
 			<groupId>com.google.code.maven-play-plugin.spy</groupId>
 			<artifactId>memcached</artifactId>
 			<version>2.4.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>4.5.5</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.1.15</version>
 		</dependency>
 	</dependencies>
 </project>

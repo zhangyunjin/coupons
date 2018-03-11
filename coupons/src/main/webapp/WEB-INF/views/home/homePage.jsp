@@ -12,7 +12,6 @@
 <base href="<%=basePath%>">
 
 <title>My JSP 'HomePage.jsp' starting page</title>
-
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -21,16 +20,16 @@
 </head>
 <body>
 	<div>
-		<label for="">商品名称：</label> <span id="goods_name"></span>
+		<label>商品名称：</label> <span id="goods_name"></span>
 	</div>
 	<div>
-		<label for="">类别：</label> <span id="cate_name"></span>
+		<label>类别：</label> <span id="cate_name"></span>
 	</div>
 	<div>
-		<label for="">全价：</label> <span id="price"></span>
+		<label>全价：</label> <span id="price"></span>
 	</div>
 	<div>
-		<label for="">券后价：</label> <span id="price_after_coupons"></span>
+		<label>券后价：</label> <span id="price_after_coupons"></span>
 	</div>
 </body>
 <script src="resources/commons/js/lib/jquery.1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
