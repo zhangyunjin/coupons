@@ -2,7 +2,7 @@ package cn.edu.core.bean;
 
 import java.util.Date;
 
-public class User {
+public class Member {
 
 	private String userId;
 	private String loginName;

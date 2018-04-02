@@ -136,7 +136,7 @@ public class HttpClientUtils {
         HttpGet request = new HttpGet(url);  
         // 设置请求和传输超时时间  
         RequestConfig requestConfig = RequestConfig.custom()  
-                .setSocketTimeout(60000000).setConnectTimeout(60000000).build();  
+                .setSocketTimeout(200000).setConnectTimeout(200000).build();  
         request.setConfig(requestConfig);  
         try {  
             CloseableHttpResponse response = client.execute(request);  

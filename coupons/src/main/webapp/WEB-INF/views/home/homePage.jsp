@@ -20,6 +20,9 @@
 </head>
 <body>
 	<div>
+		<input id="sousuo"><a href = "http://api.tkjidi.com/getGoodsLink?appkey=8c5212551422bfab069e9099da2048bf&type=so&keyword=玩具">搜索</a>
+	</div>
+	<div>
 		<label>商品名称：</label> <span id="goods_name"></span>
 	</div>
 	<div>

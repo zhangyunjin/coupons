@@ -22,10 +22,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   </head>
   <body>
+  	<div>
+		<input id="sousuo"><a href = "http://api.tkjidi.com/getGoodsLink?appkey=8c5212551422bfab069e9099da2048bf&type=so&keyword=玩具">搜索</a>
+	</div>
 	<div>
 		<label>商品类别：</label> <span id="classname"></span>
 	</div>
 </body>
 <script src="resources/commons/js/lib/jquery.1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="resources/home/js/homePage.js" type="text/javascript" charset="utf-8"></script>
+<script src="resources/classify/js/classifyPage.js" type="text/javascript" charset="utf-8"></script>
 </html>

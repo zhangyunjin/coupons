@@ -23,6 +23,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    This is my JSP page. <br>
+   <div>
+		<a href = "https://www.taobao.com/">淘宝订单</a>
+	</div>
+	<div>
+		<a href = "https://www.taobao.com/">购物车</a>
+	</div>
   </body>
 </html>

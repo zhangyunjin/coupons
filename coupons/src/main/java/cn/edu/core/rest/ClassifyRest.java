@@ -1,26 +1,31 @@
 package cn.edu.core.rest;
 
-import javax.servlet.http.HttpServletResponse;
-
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.alibaba.fastjson.JSONObject;
+
+import cn.edu.core.commons.bean.BaseResponse;
+import cn.edu.core.commons.url.UrlConstant;
 import cn.edu.core.commons.utils.HttpClientUtils;
 
 @RestController
 @RequestMapping(value = "/classifyRest")
 public class ClassifyRest {
 
-	@RequestMapping(value = "/getClassify.do")    
-    public void getClassify(HttpServletResponse response)throws Exception{  
-		String url = "http://api.tkjidi.com/classList?appkey=8c5212551422bfab069e9099da2048bf";
-		Object returnObj = HttpClientUtils.httpGet(url);
-		response.setCharacterEncoding("UTF-8");
-		if(returnObj != null){
-			 response.getWriter().write(returnObj.toString());
-		}else{
-			response.getWriter().write("timeout");
-		}
-    }
+	/**
+	 * 获取优惠券商品分类
+	 * @param response
+	 * @return
+	 * @throws Exception
+	 */
+	@GetMapping(value="/getClassify.do")
+	public BaseResponse<JSONObject> getCouponsList(){
+		BaseResponse<JSONObject> response = new BaseResponse<JSONObject>();
+		JSONObject returnObj = HttpClientUtils.httpGet(UrlConstant.URL_COUPON_CLASSIFY);
+	    response.setData(returnObj);
+	    return response;
+	}
 	
 }
