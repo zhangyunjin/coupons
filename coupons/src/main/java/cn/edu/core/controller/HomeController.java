@@ -20,4 +20,11 @@ public class HomeController {
 	public String conponsList(HttpServletResponse response){
 		return "home/homePage";
 	}
+	/**
+	 * 首页优惠券列表
+	 */
+	@RequestMapping("/toDemo.do")
+	public String toDemo(HttpServletResponse response){
+		return "demo/百度一下";
+	}
 }
